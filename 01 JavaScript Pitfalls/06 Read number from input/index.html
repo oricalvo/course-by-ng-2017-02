@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <input id="text">
+        <button id="btn1">Read</button>
+
+        <script>
+            var input = document.getElementById("text");
+            var button = document.getElementById("btn1");
+
+            button.addEventListener("click", function(){
+                var res = input.value * 1 + 10;
+                console.log("RESULT: " + res);
+
+//                if(res < 1000) {
+//                }
+            });
+        </script>
+    </body>
+</html>

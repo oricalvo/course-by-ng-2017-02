@@ -1,0 +1,34 @@
+<html>
+<head></head>
+<body>
+<script>
+    var x = undefined;
+    console.log(typeof x);
+
+    x = null;
+    console.log(typeof x);
+
+    x = 42;
+    console.log(typeof x);
+
+    x = "abc";
+    x = x[0];
+    console.log(typeof x);
+
+    console.log(Math.floor(10/3));
+
+    x = function () {
+    }
+    console.log(typeof x);
+
+    x = {
+        id: 1,
+        name: "Ori"
+    };
+    console.log(typeof x);
+
+    x = true;
+    console.log(typeof x);
+</script>
+</body>
+</html>

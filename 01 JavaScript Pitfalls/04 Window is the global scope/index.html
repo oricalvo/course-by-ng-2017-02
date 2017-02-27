@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<body>
+<script>
+    //var num = 10;
+
+//    console.log(window.hasOwnProperty("num"));
+//
+//    for(var key in window) {
+//        console.log(key);
+//    }
+
+    function checkCompatibility() {
+        if (typeof JSON == "undefined") {
+            window.JSON = {
+                stringify: function() {
+                }
+            };
+        }
+    }
+
+    checkCompatibility();
+
+    JSON.stringify({id:1, name: "Ori"});
+</script>
+</body>
+</html>

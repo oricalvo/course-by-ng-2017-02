@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+<script>
+    var x = 10;
+    var y = 12;
+
+    console.log(null==undefined);
+    console.log(2=="2");
+
+    console.log(null===undefined);
+    console.log(2==="2");
+
+    x = function() {
+        console.log("xxx");
+    }
+
+    if(x) {
+    }
+
+    //Falsy: undefined, null, false, 0, "" --> False
+    //Truthy: --> true
+
+    console.log(!!x);
+    //console.log(x===y);
+</script>
+</body>
+</html>
