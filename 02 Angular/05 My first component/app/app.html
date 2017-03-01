@@ -1,0 +1,19 @@
+<h1>Selected contact is: {{$ctrl.selectedContact.name}}</h1>
+
+<my-contact-list name="contactList1"
+                 contacts="$ctrl.contacts"
+                 on-selection-changed="$ctrl.onSelectionChanged($event)"></my-contact-list>
+
+<div>
+    <input ng-model="$ctrl.newName">
+    <button ng-click="$ctrl.add()">Add</button>
+    <button ng-click="$ctrl.deleteSelected()">Delete Selected</button>
+</div>
+
+<!--<my-contact-list contacts="$ctrl.contacts2"></my-contact-list>-->
+
+<!--<div>-->
+    <!--<input ng-model="$ctrl.newName">-->
+    <!--<button ng-click="$ctrl.add()">Add</button>-->
+    <!--<button ng-click="$ctrl.deleteSelected()">Delete Selected</button>-->
+<!--</div>-->

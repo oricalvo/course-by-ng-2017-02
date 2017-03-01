@@ -1,0 +1,22 @@
+my-contact-list {
+    display: inline-block;
+    width: 20em;
+}
+
+my-contact-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+my-contact-list ul li {
+    padding: 0.5em;
+}
+
+my-contact-list ul li:hover {
+    background-color: lightblue;
+}
+
+my-contact-list ul li.selected {
+    background-color: blue;
+}

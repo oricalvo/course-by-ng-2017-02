@@ -1,0 +1,12 @@
+<div>
+    <ul>
+        <li ng-repeat="contact in $ctrl.contactsVM"
+            ng-click="$ctrl.select(contact)"
+            ng-class="{selected: contact.selected}">
+            <label>
+                <!--<input type="checkbox" ng-model="contact.selected">-->
+                <span>{{contact.name}}</span>
+            </label>
+        </li>
+    </ul>
+</div>

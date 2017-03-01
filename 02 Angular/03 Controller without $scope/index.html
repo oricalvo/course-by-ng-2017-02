@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div ng-controller="HomeCtrl as ctrl">
+        <ul>
+            <li ng-repeat="contact in ctrl.contacts">
+
+                <label>
+                    <input type="checkbox" ng-model="contact.selected">
+                    <span>{{contact.name}}</span>
+                </label>
+            </li>
+        </ul>
+
+        <div>
+            <input ng-model="ctrl.newName">
+            <button ng-click="ctrl.add()">Add</button>
+            <button ng-click="ctrl.deleteSelected()">Delete Selected</button>
+        </div>
+    </div>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>
