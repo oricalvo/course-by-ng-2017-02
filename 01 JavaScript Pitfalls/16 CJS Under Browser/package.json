@@ -1,0 +1,15 @@
+{
+  "name": "cjs-under-browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "file1.js",
+  "dependencies": {
+    "systemjs": "^0.19.40"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
