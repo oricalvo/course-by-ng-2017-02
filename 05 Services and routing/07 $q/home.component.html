@@ -1,0 +1,14 @@
+<h1>Home</h1>
+
+<div ng-if="$ctrl.loading">
+    Loading ...
+</div>
+
+<ul>
+    <li ng-repeat="contact in $ctrl.contacts"
+        ng-click="$ctrl.gotoContactDetails(contact)">
+        <span>{{contact.name}}</span>
+    </li>
+</ul>
+
+<button ng-click="$ctrl.gotoAbout()">Goto about</button>
