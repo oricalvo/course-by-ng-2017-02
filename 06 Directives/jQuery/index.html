@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <span class="first">XXX</span>
+    <span>XXX</span>
+
+    <div class="marker"></div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        setTimeout(function() {
+            //$(".first").text("YYY");
+
+            var marker = $(".marker");
+
+            marker.append("<button>OK</button>");
+        }, 2000);
+    </script>
+</body>
+</html>

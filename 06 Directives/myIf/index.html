@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Number of watchers: {{$$watchersCount}}</h1>
+    <div ng-controller="HomeCtrl">
+        <button ng-click="toggle()">Toggle</button>
+
+        <div my-if="flag">
+            <h1>Hello Custom Directive</h1>
+
+            {{xxx}}
+            <input ng-model="num1">
+        </div>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

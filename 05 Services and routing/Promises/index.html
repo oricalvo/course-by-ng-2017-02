@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        g().then(function() {
+        }, function() {
+        });
+
+        function calc(num1) {
+            return Promise.resolve(num1);
+        }
+
+        function calcWrapper(num1) {
+            return calc(num1).then(function(res) {
+                return res * 2;
+            });
+        }
+
+        function calcWrapper2(num1) {
+            return calcWrapper(num1).then(function(res) {
+                return res * 3;
+            });
+        }
+
+        console.log(performance.now());
+
+        setTimeout(function() {
+            console.log(performance.now());
+        }, 0);
+
+//        calcWrapper2(1).then(function(res) {
+//            console.log(new Date().valueOf());
+//
+//            console.log(res);
+//        }).catch(function() {
+//        });
+
+        function run(num) {
+            console.log("inside run");
+
+            return new Promise(function(resolve, reject) {
+                console.log("inside promise");
+
+                setTimeout(function() {
+                    //resolve(num * 2);
+                    reject(new Error("Internal error"));
+                }, 1500);
+            });
+        }
+
+//        console.log("before run");
+//
+//        run(21).then(function() {
+//            console.log("SUCCESS");
+//        }).catch(function() {
+//            console.log("ERROR");
+//        });
+
+//        var p = run(21);
+//
+//        var p2 = p.then(function(res) {
+//            console.log("SUCCESS: " + res);
+//        });
+//
+//        p.catch(function(err) {
+//            console.log("P1 ERROR:" + err.message);
+//        });
+//
+//        p2.catch(function(err) {
+//            console.log("P2 ERROR:" + err.message);
+//        });
+
+        //console.log("after run");
+
+//        function run(success, error) {
+//            setTimeout(function() {
+//                //success(42);
+//
+//                error(new Error("Ooops"));
+//            }, 1500);
+//        }
+//
+//        run(function(res) {
+//            console.log("SUCCESS: " + res);
+//        }, function (err) {
+//            console.log("ERROR: " + err.message);
+//        });
+    </script>
+</body>
+</html>
