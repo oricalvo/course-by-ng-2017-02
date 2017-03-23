@@ -1,0 +1,17 @@
+<h1>Board</h1>
+
+<div class="board">
+    <div class="row" ng-repeat="row in $ctrl.board.rows track by $index">
+        <div class="cell"
+             ng-repeat="cell in row track by $index"
+             ng-click="$ctrl.cellClicked(cell)">
+            <span class="content">{{cell.value}}</span>
+        </div>
+    </div>
+</div>
+
+<!--<ul>-->
+    <!--<li ng-repeat="num in $ctrl.nums track by $index">-->
+        <!--<span>{{num}}</span>-->
+    <!--</li>-->
+<!--</ul>-->

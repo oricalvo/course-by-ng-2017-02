@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .parent {
+            background-color: yellow;
+            height: 400px;
+        }
+
+        .parent * {
+            vertical-align: middle;
+        }
+
+        .a {
+            /*vertical-align: middle;*/
+        }
+
+        .div {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <span class="G">G</span>
+        <span class="g">g</span>
+        <span class="a">a</span>
+        <span class="blabla">Blabla</span>
+        <div class="div"></div>
+    </div>
+</body>
+</html>

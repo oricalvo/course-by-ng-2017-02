@@ -1,0 +1,22 @@
+
+idi-board {
+    display: block;
+}
+
+idi-board .row {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+idi-board .cell {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    vertical-align: middle;
+}
+
+idi-board .cell .content {
+    font-size: 2em;
+}

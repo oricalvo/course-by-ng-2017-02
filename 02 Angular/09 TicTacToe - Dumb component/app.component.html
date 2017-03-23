@@ -1,0 +1,15 @@
+<h1>Tic Tac Toe</h1>
+
+<idi-board
+        board="$ctrl.board1"
+        on-next-move="$ctrl.onNextMove($event)">
+</idi-board>
+
+<div>
+    <button ng-click="$ctrl.newGame()">New Game</button>
+</div>
+
+<idi-board
+        board="$ctrl.board2"
+        on-next-move="$ctrl.onNextMove($event)">
+</idi-board>

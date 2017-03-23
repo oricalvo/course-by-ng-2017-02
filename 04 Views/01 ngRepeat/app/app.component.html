@@ -1,0 +1,16 @@
+<h1>My App</h1>
+
+<div>
+    <button ng-click="$ctrl.refresh()">Refresh</button>
+</div>
+
+<ul>
+    <li ng-repeat="contact in $ctrl.contacts track by $index">
+        <my-contact-details contact="contact"></my-contact-details>
+        <button ng-click="$ctrl.remove($index)">Delete</button>
+    </li>
+</ul>
+
+<div>
+    <input ng-model="$ctrl.name"><button ng-click="$ctrl.add()">Add</button>
+</div>
